@@ -18,6 +18,7 @@
 # include <stdio.h>
 # include <string.h>
 # include <stdarg.h>
+# include "ft_printf.h"
 
 # define MAX_INT		(2147483647)
 # define MIN_INT		(-2147483648)
@@ -56,6 +57,7 @@ void					ft_error(const char *error_msg, int error_code);
 
 int						ft_get_next_line(int fd, char **line);
 int						ft_mod_num(int num);
+__int128_t				ft_atoi_base(const char *str, int base);
 
 void					ft_lstpop(t_list **list);
 void					ft_lstpurge(t_list **list);
