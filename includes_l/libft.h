@@ -6,7 +6,7 @@
 /*   By: dbendu <dbendu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 20:28:39 by dbendu            #+#    #+#             */
-/*   Updated: 2019/12/17 15:38:51 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/12/20 16:50:50 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,9 +54,12 @@ typedef struct			s_dlist
 
 int						ft_is_hex(char c);
 void					ft_error(const char *error_msg, int error_code);
+t_bool					ft_check_num(const char *str);
+void					ft_free(char ***str, size_t i);
 
 int						ft_get_next_line(int fd, char **line);
 int						ft_mod_num(int num);
+size_t					ft_count_words(const char *str, char c);
 __int128_t				ft_atoi_base(const char *str, int base);
 
 void					ft_lstpop(t_list **list);
@@ -155,7 +158,6 @@ int						ft_tolower(int c);
 int						ft_toupper(int c);
 int						ft_min(int a, int b);
 int						ft_max(int a, int b);
-void					ft_arrdel(void ***arr);
 int						ft_minn(int amount, ...);
 int						ft_maxn(int amount, ...);
 long double				ft_dpow(long double num, int n);

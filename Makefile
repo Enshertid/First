@@ -6,7 +6,7 @@
 #    By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/12/17 13:02:34 by ymanilow          #+#    #+#              #
-#    Updated: 2019/12/17 17:24:11 by ymanilow         ###   ########.fr        #
+#    Updated: 2019/12/20 16:44:30 by ymanilow         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,9 +32,9 @@ DIR_H_P = includes_p
 
 SRCS_L =\
 ft_abs.c	ft_error.c	ft_swap.c				\
-ft_dpow.c	ft_ipow.c	ft_arrdel.c				\
+ft_dpow.c	ft_ipow.c	ft_free.c				\
 ft_sizeof_num.c	ft_print_bits.c	ft_memrnchr.c	\
-ft_tolower.c	ft_toupper.c					\
+ft_tolower.c	ft_toupper.c	ft_count_words.c\
 ft_isalnum.c	ft_isalpha.c	ft_isascii.c	\
 ft_isdigit.c	ft_isprint.c	ft_isspace.c	\
 ft_putnbr.c		ft_putstr.c		ft_putchar.c	\
@@ -60,7 +60,8 @@ ft_lstpurge.c	ft_lstdelete.c	ft_lstextend.c	\
 ft_lstdelone.c	ft_lstappend.c	ft_lstpopback.c	\
 ft_dlstnew.c	ft_dlstnew.c	ft_dlstiter.c	\
 ft_dlstsize.c	ft_dlstpurge.c	ft_dlstappend.c	\
-ft_get_next_line.c	ft_mod_num.c	ft_is_hex.c
+ft_get_next_line.c	ft_mod_num.c	ft_is_hex.c \
+ft_check_num.c									\
 
 
 SRCS_P =	ft_printf.c\

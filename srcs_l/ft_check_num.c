@@ -1,32 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_arrdel.c                                        :+:      :+:    :+:   */
+/*   ft_check_num.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbendu <dbendu@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/16 16:37:30 by dbendu            #+#    #+#             */
-/*   Updated: 2019/12/17 15:56:44 by ymanilow         ###   ########.fr       */
+/*   Created: 2019/12/19 17:46:07 by ymanilow          #+#    #+#             */
+/*   Updated: 2019/12/19 17:46:07 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_arrdel(void ***mem)
+t_bool						ft_check_num(const char *str)
 {
-	size_t	iter;
-	char	***arr;
-
-	arr = (char***)mem;
-	if (!arr || !*arr)
-		return ;
-	iter = 0;
-	while ((*arr)[iter])
+	while (*str)
 	{
-		free((*arr)[iter]);
-		(*arr)[iter] = NULL;
-		++iter;
+		if (!ft_isalnum(*str))
+			return (0);
+		str++;
 	}
-	free(*arr);
-	*arr = NULL;
+	return(1);
 }
