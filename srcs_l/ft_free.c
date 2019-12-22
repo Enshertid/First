@@ -6,22 +6,21 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/20 16:42:57 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/12/20 16:49:53 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/12/22 16:19:44 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void					ft_free(char ***str, size_t i)
+void					ft_free(char **str, size_t i)
 {
 	size_t j;
 
 	j = 0;
 	while (j < i)
 	{
-		free(*str[j]);
+		free(str[j]);
 		j++;
 	}
-	free(*str);
-	*str = NULL;
+	free(str);
 }

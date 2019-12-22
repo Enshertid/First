@@ -6,7 +6,7 @@
 /*   By: dbendu <dbendu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 20:28:39 by dbendu            #+#    #+#             */
-/*   Updated: 2019/12/20 16:50:50 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/12/22 16:19:44 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ typedef struct			s_dlist
 int						ft_is_hex(char c);
 void					ft_error(const char *error_msg, int error_code);
 t_bool					ft_check_num(const char *str);
-void					ft_free(char ***str, size_t i);
+void					ft_free(char **str, size_t i);
 
 int						ft_get_next_line(int fd, char **line);
 int						ft_mod_num(int num);

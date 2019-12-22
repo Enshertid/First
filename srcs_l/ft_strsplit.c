@@ -6,7 +6,7 @@
 /*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 20:27:18 by dbendu            #+#    #+#             */
-/*   Updated: 2019/12/20 16:41:16 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/12/22 16:20:03 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char				**ft_strsplit(const char *str, char c)
 	{
 		if (!(arr[iter] = (char*)malloc(word_len + 1)))
 		{
-			ft_free(&arr, iter);
+			ft_free(arr, iter);
 			return (NULL);
 		}
 		ft_strncpy(arr[iter], str, word_len);
