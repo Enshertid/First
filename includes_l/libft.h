@@ -6,7 +6,7 @@
 /*   By: dbendu <dbendu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 20:28:39 by dbendu            #+#    #+#             */
-/*   Updated: 2019/12/22 16:19:44 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/12/25 14:13:12 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,17 @@
 # define UL				unsigned long
 
 # define TOSTR(a)		#a
+
 # define TRUE 1
 # define FALSE 0
 
 typedef char t_bool;
+
+typedef struct			s_void
+{
+	void				*data;
+	struct s_void		*next;
+}						t_void;
 
 typedef	struct			s_list
 {
@@ -56,6 +63,9 @@ int						ft_is_hex(char c);
 void					ft_error(const char *error_msg, int error_code);
 t_bool					ft_check_num(const char *str);
 void					ft_free(char **str, size_t i);
+
+void					*ft_malloc_store(size_t size);
+void 					ft_free_storage();
 
 int						ft_get_next_line(int fd, char **line);
 int						ft_mod_num(int num);
