@@ -1,24 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_check_num.c                                     :+:      :+:    :+:   */
+/*   ft_pow.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/12/19 17:46:07 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/12/19 17:46:07 by ymanilow         ###   ########.fr       */
+/*   Created: 2020/01/18 13:26:01 by ymanilow          #+#    #+#             */
+/*   Updated: 2020/01/18 13:26:01 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_bool						ft_check_num(const char *str)
+int								ft_pow(int num, int pow)
 {
-	while (*str)
+	__int128_t			res;
+
+	res = 1;
+	while (pow)
 	{
-		if (!ft_isdigit(*str))
-			return (0);
-		str++;
+		if (pow & 1)
+			res *= num;
+		num *= num;
+		pow >>= 1;
 	}
-	return(1);
+	num = res;
+	if (res != num)
+		ft_error ("overflow of int in ft_pow", 1);
+	return (num);
 }

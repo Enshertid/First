@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_check_num.c                                     :+:      :+:    :+:   */
+/*   ft_count_symbol.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/12/19 17:46:07 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/12/19 17:46:07 by ymanilow         ###   ########.fr       */
+/*   Created: 2020/01/20 20:45:35 by ymanilow          #+#    #+#             */
+/*   Updated: 2020/01/20 20:47:17 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_bool						ft_check_num(const char *str)
+int						ft_count_symbol(const char *str, char symb)
 {
+	int				count;
+
+	count = 0;
 	while (*str)
-	{
-		if (!ft_isdigit(*str))
-			return (0);
-		str++;
-	}
-	return(1);
+		if(*str++ == symb)
+			count++;
+	return (count);
 }

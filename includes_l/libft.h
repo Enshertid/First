@@ -6,7 +6,7 @@
 /*   By: dbendu <dbendu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 20:28:39 by dbendu            #+#    #+#             */
-/*   Updated: 2019/12/25 14:13:12 by ymanilow         ###   ########.fr       */
+/*   Updated: 2020/01/20 20:46:43 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,10 +59,13 @@ typedef struct			s_dlist
 	struct s_dlist		*end;
 }						t_dlist;
 
-int						ft_is_hex(char c);
-void					ft_error(const char *error_msg, int error_code);
-t_bool					ft_check_num(const char *str);
 void					ft_free(char **str, size_t i);
+void					ft_error(const char *error_msg, int error_code);
+
+t_bool					ft_check_num(const char *str);
+int						ft_pow(int num, int pow);
+int						ft_is_hex(char c);
+int						ft_count_symbol(const char *str, char symb);
 
 void					*ft_malloc_store(size_t size);
 void 					ft_free_storage();
