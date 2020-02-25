@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbendu <dbendu@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 20:28:39 by dbendu            #+#    #+#             */
-/*   Updated: 2020/01/20 20:46:43 by ymanilow         ###   ########.fr       */
+/*   Updated: 2020/02/25 21:55:01 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -178,5 +178,6 @@ void					print_bits(void *a, size_t size);
 void					printn_bits(void *a, size_t size);
 unsigned long long		ft_ipow(unsigned long long num, int n);
 char					*ft_itoa(long long int num);
+char					*ft_my_itoa(__int128_t num, char *str, unsigned base, unsigned is_upper);
 
 #endif
