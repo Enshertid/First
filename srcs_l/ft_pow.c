@@ -6,13 +6,13 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/18 13:26:01 by ymanilow          #+#    #+#             */
-/*   Updated: 2020/01/18 13:26:01 by ymanilow         ###   ########.fr       */
+/*   Updated: 2020/02/26 16:23:40 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int								ft_pow(int num, int pow)
+unsigned int								ft_pow(unsigned int num, int pow)
 {
 	__int128_t			res;
 
@@ -25,7 +25,5 @@ int								ft_pow(int num, int pow)
 		pow >>= 1;
 	}
 	num = res;
-	if (res != num)
-		ft_error ("overflow of int in ft_pow", 1);
 	return (num);
 }

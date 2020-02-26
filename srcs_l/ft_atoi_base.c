@@ -6,13 +6,13 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/18 13:53:45 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/12/18 14:19:15 by ymanilow         ###   ########.fr       */
+/*   Updated: 2020/02/26 16:59:24 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_is_valid(char c)
+int						ft_is_valid(char c)
 {
 	const char		*dec = "0123456789";
 	const char		*low = "abcdef";
@@ -36,7 +36,7 @@ int ft_is_valid(char c)
 		while (dec[++i])
 			if (dec[i] == c)
 				return (i);
-	return(20);
+	return (20);
 }
 
 __int128_t				ft_atoi_base(const char *str, int base)

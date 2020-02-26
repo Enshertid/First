@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/22 14:17:47 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/12/17 15:38:51 by ymanilow         ###   ########.fr       */
+/*   Updated: 2020/02/26 17:01:48 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@
 
 # define ULL unsigned long long
 # define UL unsigned long
-# define TOSTR(a)	#a
 # define BUFF_SIZE 5000
 # define DBL_SIZE 20000
 # define INT_PART 11000

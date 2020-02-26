@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 20:12:17 by dbendu            #+#    #+#             */
-/*   Updated: 2019/12/17 15:38:51 by ymanilow         ###   ########.fr       */
+/*   Updated: 2020/02/26 16:56:05 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-__int128_t	ft_atoi(const char *str)
+__int128_t		ft_atoi(const char *str)
 {
 	__int128_t	res;
-	short int		sign;
+	short int	sign;
 
 	while (ft_isspace(*str))
 		++str;
