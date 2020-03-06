@@ -6,13 +6,13 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 20:45:35 by ymanilow          #+#    #+#             */
-/*   Updated: 2020/03/06 12:43:37 by ymanilow         ###   ########.fr       */
+/*   Updated: 2020/03/06 12:58:37 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int						ft_count_symbol(const char *str, char symb)
+int					ft_count_symbol(const char *str, char symb)
 {
 	int				count;
 

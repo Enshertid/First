@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 20:28:39 by dbendu            #+#    #+#             */
-/*   Updated: 2020/03/06 12:42:21 by ymanilow         ###   ########.fr       */
+/*   Updated: 2020/03/06 12:58:13 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,6 @@
 
 # define ULL			unsigned long long
 # define UL				unsigned long
-
-# define TOSTR(a)		#a
 
 # define TRUE 1
 # define FALSE 0
@@ -63,7 +61,7 @@ void					ft_free(char **str, size_t i);
 void					ft_error(const char *error_msg, int error_code);
 
 t_bool					ft_check_num(const char *str);
-int						ft_pow(int num, int pow);
+unsigned int			ft_pow(unsigned int num, int pow);
 int						ft_is_hex(char c);
 int						ft_count_symbol(const char *str, char symb);
 
