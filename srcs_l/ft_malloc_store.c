@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/22 14:59:43 by ymanilow          #+#    #+#             */
-/*   Updated: 2020/03/06 12:58:57 by ymanilow         ###   ########.fr       */
+/*   Updated: 2020/03/06 14:33:59 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void					*ft_malloc_store(size_t size)
 	if (!(storage = ft_storage()))
 		return (NULL);
 	if (!(data = ft_memalloc(size)))
-		ft_error("can't allocate memory in storage's data\n", 500);
+		ft_error("can't allocate memory in storage's data", 500);
 	if (*storage)
 	{
 		tmp = ft_memalloc(sizeof(t_void));
@@ -52,7 +52,7 @@ void					ft_free_storage(void)
 
 	storage = ft_storage();
 	if (!(*storage))
-		ft_error("you can't free unused memory\n", 500);
+		ft_error("you can't free unused memory", 500);
 	tmp = *storage;
 	while (tmp)
 	{
