@@ -1,21 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   ft_get_next_line.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ymanilow <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/11 19:28:30 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/12/22 16:19:44 by ymanilow         ###   ########.fr       */
+/*   Updated: 2020/03/06 12:47:09 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-char		*ft_str_out_and_del(char *s, char **line)
+
+char				*ft_str_out_and_del(char *s, char **line)
 {
-	char		*s1;
-	char		*s2;
-	int			i;
+	char			*s1;
+	char			*s2;
+	int				i;
 
 	i = 0;
 	while (s[i] && s[i] != '\n')
@@ -28,11 +29,11 @@ char		*ft_str_out_and_del(char *s, char **line)
 	return (s);
 }
 
-char		*ft_read_out(char *s, int fd)
+char				*ft_read_out(char *s, int fd)
 {
-	int			ret;
-	char		*s1;
-	char		buff[GNL_BUFF_SIZE + 1];
+	int				ret;
+	char			*s1;
+	char			buff[GNL_BUFF_SIZE + 1];
 
 	while ((ret = read(fd, buff, GNL_BUFF_SIZE)) > 0)
 	{
@@ -46,10 +47,10 @@ char		*ft_read_out(char *s, int fd)
 	return (s);
 }
 
-int			ft_get_next_line(int fd, char **line)
+int					ft_get_next_line(int fd, char **line)
 {
-	static char			*s[10000];
-	char				*s1;
+	static char		*s[10000];
+	char			*s1;
 
 	if (fd < 0 || fd > 10000 || !line || (read(fd, NULL, 0) < 0))
 		return (-1);

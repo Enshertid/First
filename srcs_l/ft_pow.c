@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/18 13:26:01 by ymanilow          #+#    #+#             */
-/*   Updated: 2020/01/18 13:26:01 by ymanilow         ###   ########.fr       */
+/*   Updated: 2020/03/06 12:45:13 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ int								ft_pow(int num, int pow)
 	}
 	num = res;
 	if (res != num)
-		ft_error ("overflow of int in ft_pow", 1);
+		ft_error("overflow of int in ft_pow", 1);
 	return (num);
 }

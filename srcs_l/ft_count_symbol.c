@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 20:45:35 by ymanilow          #+#    #+#             */
-/*   Updated: 2020/01/20 20:47:17 by ymanilow         ###   ########.fr       */
+/*   Updated: 2020/03/06 12:43:37 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int						ft_count_symbol(const char *str, char symb)
 
 	count = 0;
 	while (*str)
-		if(*str++ == symb)
+		if (*str++ == symb)
 			count++;
 	return (count);
 }

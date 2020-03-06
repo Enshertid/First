@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 20:28:39 by dbendu            #+#    #+#             */
-/*   Updated: 2020/02/25 21:55:01 by ymanilow         ###   ########.fr       */
+/*   Updated: 2020/03/06 12:42:21 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@
 # define TRUE 1
 # define FALSE 0
 
-typedef char t_bool;
+typedef char			t_bool;
 
 typedef struct			s_void
 {
@@ -68,7 +68,7 @@ int						ft_is_hex(char c);
 int						ft_count_symbol(const char *str, char symb);
 
 void					*ft_malloc_store(size_t size);
-void 					ft_free_storage();
+void					ft_free_storage();
 
 int						ft_get_next_line(int fd, char **line);
 int						ft_mod_num(int num);
@@ -178,6 +178,7 @@ void					print_bits(void *a, size_t size);
 void					printn_bits(void *a, size_t size);
 unsigned long long		ft_ipow(unsigned long long num, int n);
 char					*ft_itoa(long long int num);
-char					*ft_my_itoa(__int128_t num, char *str, unsigned base, unsigned is_upper);
+char					*ft_my_itoa(__int128_t num, char *str, unsigned base,
+								unsigned is_upper);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/19 17:46:07 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/12/19 17:46:07 by ymanilow         ###   ########.fr       */
+/*   Updated: 2020/03/06 12:48:39 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,5 @@ t_bool						ft_check_num(const char *str)
 			return (0);
 		str++;
 	}
-	return(1);
+	return (1);
 }

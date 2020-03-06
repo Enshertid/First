@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbendu <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 20:24:57 by dbendu            #+#    #+#             */
-/*   Updated: 2019/12/17 15:38:51 by ymanilow         ###   ########.fr       */
+/*   Updated: 2020/03/06 12:48:23 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *destptr, const char *srcptr, size_t num)
+char				*ft_strncat(char *destptr, const char *srcptr, size_t num)
 {
-	register char *str;
+	register char	*str;
 
 	str = destptr + ft_strlen(destptr);
 	while (*srcptr && num--)
